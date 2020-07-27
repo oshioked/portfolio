@@ -1,0 +1,48 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    height: 80px;
+    top: 20px;
+    position: absolute;
+
+    .brand{
+        h1{
+            font-size: 18px;
+            margin: 0;
+            font-weight: 500;
+            overflow: hidden;
+        }
+
+        h4{
+            margin: 0;
+            font-size: 14px;
+            font-weight: 100;
+            overflow: hidden;
+        }
+    }
+
+
+    .button-container{
+            overflow: hidden;
+
+        button{
+            background: transparent;
+            border: none;
+            width: 30px;
+            padding: 0;
+            outline: none;
+            cursor: pointer;
+
+            svg{
+                width: 100%;
+            }            
+        }
+
+
+    }
+
+
+}

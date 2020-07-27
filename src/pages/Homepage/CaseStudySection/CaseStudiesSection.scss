@@ -1,0 +1,43 @@
+.case-study-section{
+    min-height: 100vh;
+    padding: 2% 0;
+    position: relative;
+
+    .head{
+        height: 10%;
+        padding-left: 7%;
+        h1{
+            margin-top: 0;
+            font-size: 28px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.415);;
+        }        
+    }
+
+
+
+    .slide-container{
+      
+
+        .slide{
+            height: 100%;
+            // display: flex;
+            // align-items: flex-start;
+            // padding-top: 50px;
+
+            .set{
+                padding: 0 7%;
+                min-width: 100%;
+                margin: 400px 0 0;
+                // max-height: 70vh;
+                display: flex;
+                align-items: flex-end;
+
+                &:first-child{
+                    margin-top: 100px;
+                }
+            }            
+        }
+    }
+
+}
