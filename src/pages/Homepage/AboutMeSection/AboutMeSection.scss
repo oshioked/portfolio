@@ -1,0 +1,32 @@
+.about-section{
+    padding: 40px 15%;
+    height: 85vh;
+    text-align: center;
+
+    .head{
+
+        h3{
+            color: rgba(255, 255, 255, 0.415);
+            font-weight: 200;
+            font-size: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+
+    .details{
+        margin-top: 50px;
+        h1{
+            font-size: 36px;
+            line-height: 55px;
+            margin-top: 20px;
+        }
+
+        p{
+            color: rgba(255, 255, 255, 0.615);
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+    }
+}
