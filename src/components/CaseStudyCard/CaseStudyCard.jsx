@@ -76,17 +76,17 @@ const CaseStudyCard = props =>{
             duration: .3,
         }, '-=1.5')
         .from(otherPhotosChildren[1], {
-            duration: .3,
+            duration: .5,
             autoAlpha: 0,
             x: -(otherPhotosContWidth/1.5)
-        }, '-=.2')
+        })
         .from(otherPhotosChildren[3], {
-            duration: .3,
+            duration: .5,
             autoAlpha: 0,
             y: -(otherPhotosContHeight * 2)
         })
         .from(otherPhotosChildren[2], {
-            duration: .3,
+            duration: .5,
             autoAlpha: 0,
             x: (otherPhotosContWidth/1.5)
         })

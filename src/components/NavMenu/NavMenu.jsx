@@ -16,7 +16,7 @@ const NavMenu = props =>{
         tl.from(navRef.current,{
             yPercent: -100,
             duration: 1.3,
-            ease: 'power3.out'
+            ease: 'power3.inOut'
         })
         .from(imgDarkenerRef.current, {
             opacity: 1,
