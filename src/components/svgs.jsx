@@ -1,10 +1,6 @@
 import React from 'react';
 
-export const NavTogglerIcon = props =>(
-    <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M33 4.61538H0V0.384613H33V4.61538ZM33 11.3846H0V15.6154H33V11.3846ZM33 22.3846H0V26.6154H33V22.3846Z" fill="white"/>
-    </svg>
-)
+
 
 export const GithubIcon = props =>(
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

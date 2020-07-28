@@ -1,12 +1,15 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useContext} from 'react';
 import './Navbar.scss';
 import gsap from'gsap';
-import { NavTogglerIcon } from '../svgs';
+import NavTogglerIcon from '../NavTogglerIcon/NavTogglerIcon';
+import { MenuContext } from '../../contextTheme/MenuContext';
 
 
 const Navbar = props =>{
     const brandRef = useRef(null);
     const togglerRef = useRef(null);
+    const {toggleHidden} = useContext(MenuContext);
+    
 
     useEffect(()=>{
         const brandTitles = [...brandRef.current.children].map(a => a.children);
@@ -33,7 +36,7 @@ const Navbar = props =>{
                 <h4><div>MOBILE AND WEB DEV</div></h4>
             </div>
             <div ref = {togglerRef} className = "button-container">
-                <button>
+                <button onClick = {toggleHidden }>
                     <NavTogglerIcon/>
                 </button>                 
             </div>
