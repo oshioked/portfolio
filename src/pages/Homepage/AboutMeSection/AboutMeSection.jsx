@@ -12,7 +12,6 @@ const AboutMeSection = props =>{
             scrollTrigger: {
                 trigger: a,
                 start: 'top+=50 bottom',
-                toggleActions: 'restart none none none'
             },
             autoAlpha: 0,
             duration: .5,

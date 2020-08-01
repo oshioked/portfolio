@@ -1,11 +1,9 @@
 .case-study-section{
     min-height: 100vh;
-    padding: 2% 0;
+    padding: 2% 7%;
     position: relative;
 
     .head{
-        height: 10%;
-        padding-left: 7%;
         h1{
             margin-top: 0;
             font-size: 28px;
@@ -14,30 +12,41 @@
         }        
     }
 
+    .cases-container{
+        .set{
+            min-width: 100%;
+            margin: 300px 0 100px;
+            // max-height: 70vh;
+            display: flex;
+            align-items: flex-end;
 
-
-    .slide-container{
-      
-
-        .slide{
-            height: 100%;
-            // display: flex;
-            // align-items: flex-start;
-            // padding-top: 50px;
-
-            .set{
-                padding: 0 7%;
-                min-width: 100%;
-                margin: 300px 0 100px;
-                // max-height: 70vh;
-                display: flex;
-                align-items: flex-end;
-
-                &:first-child{
-                    margin-top: 100px;
-                }
-            }            
+            &:first-child{
+                margin-top: 100px;
+            }
         }
     }
 
+}
+
+@media only screen and (max-width: 768px){
+    .case-study-section{
+        padding: 3% 5%;
+        padding-top: 40px;
+
+        .head{
+            h1{
+                margin: 0;
+                font-size: 24px;
+            }
+        }
+
+        .cases-container{
+
+            .set{
+                min-height: 100vh;
+                margin: 0 !important;
+                align-items: center;
+            }
+        }
+    }
 }

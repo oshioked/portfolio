@@ -15,7 +15,6 @@ const Header = props =>{
     useEffect(()=>{
         const titles = [[...titleRef.current.children].map(a => a.children)];
         const tl = gsap.timeline({delay: .7});
-        console.log(titles, document.querySelector('.case-study-card').offsetWidth)
         
         tl
             .from([...titles, ...paraRef.current.children, ...buttonRef.current.children], {

@@ -19,8 +19,7 @@ const CaseStudiesSection = props =>{
                     <div>CASE STUDIES</div>
                 </h1> 
             </div>
-            <div className = "slide-container">
-                <div className = "slide">
+            <div className = "cases-container">
                     <div className = "set">
                         <CaseStudyCard/>
                     </div>  
@@ -29,8 +28,7 @@ const CaseStudiesSection = props =>{
                     </div>  
                     <div className = "set">
                         <CaseStudyCard/>
-                    </div>       
-                </div>
+                    </div>
             </div>
         </div>
     )

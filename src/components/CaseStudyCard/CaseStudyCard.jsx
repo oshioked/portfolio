@@ -5,6 +5,30 @@ import './CaseStudyCard.scss';
 
 
 
+console.log('render')
+
+const ContentContainerComponent = ({children}) =>{
+    const [windowWidth, setWindowWith] = useState(window.innerWidth);
+
+    useEffect(()=>{
+        window.addEventListener('resize', ()=>{
+            setWindowWith(window.innerWidth)
+        })
+        return(
+            window.removeEventListener('resize', ()=>{
+                setWindowWith(window.innerWidth)
+            })
+        )
+    }, [setWindowWith])
+
+    return(
+        windowWidth > 768 ? 
+            <div className = "main-content">{children}</div>
+        : <React.Fragment>{children}</React.Fragment>        
+    )
+}
+
+
 const CaseStudyCard = props =>{
     const imgs = [
         require('../../assests/images/casestudysample.png'),
@@ -63,8 +87,7 @@ const CaseStudyCard = props =>{
         .from(mainImagesRef.current, {
             duration: 2.5,
             scale: 1.22
-        },)
-
+        })
         .from([...detailsChildren].map(a => a.children), {
             autoAlpha: 0,
             yPercent: 100,
@@ -93,9 +116,11 @@ const CaseStudyCard = props =>{
         .set(otherPhotosChildren, {
             zIndex: 0
         })
-        
-        
     }, [])
+
+
+
+
 
     return(
         <div className = "case-study-card">
@@ -104,7 +129,7 @@ const CaseStudyCard = props =>{
                 {
                     imgs.map((img, i) =>{
                         return(
-                            <div style = {{zIndex: i === 2 ? -4 : -i}} onClick = {()=>onImgClick(i)} active = {activeImg === i ? 'true' : 'false'} className = "image-container">
+                            <div key = {i} style = {{zIndex: i === 2 ? -4 : -i}} onClick = {()=>onImgClick(i)} active = {activeImg === i ? 'true' : 'false'} className = "image-container">
                                 <div className = "image-darkener"/>
                                 <img src = {img} alt = 'case-study'/>
                             </div>
@@ -112,14 +137,14 @@ const CaseStudyCard = props =>{
                     })
                 }
             </div>
-            <div className = "main-content">
+            <ContentContainerComponent>
                 <div className = "image-block">
                     <div className = 'container'>
                         <div ref = {mainImagesRef} className = "images-container">
                             {
                                 imgs.map((img, i) =>{
                                     return(
-                                        <div className = {`image ${i + 1} ${activeImg === i ? 'active' : ''}`}>
+                                        <div key = {i} className = {`image ${i + 1} ${activeImg === i ? 'active' : ''}`}>
                                             <img  src = {img} alt = 'case study'/>
                                         </div>
                                     )
@@ -134,12 +159,12 @@ const CaseStudyCard = props =>{
                             ALOX BRAND WEBSITE
                         </div>
                     </h1>
-                    <div className = 'details para1'>
+                    <div className = 'para1'>
                         <p>
                         An ecommerce travel brand website for a merce travel brand website for a travel bags and accessories.
                         </p>
                     </div>
-                    <div className = 'details para1'>
+                    <div className = 'para1'>
                         <p>
                         An ecommerce travel brand website for a merce travel brand website for a travel bags and accessories.
                         </p>
@@ -148,7 +173,7 @@ const CaseStudyCard = props =>{
                         <button>View Project</button>
                     </div>
                 </div>
-            </div>
+            </ContentContainerComponent>
         </div>
     )
 }

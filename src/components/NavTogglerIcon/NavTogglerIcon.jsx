@@ -10,7 +10,6 @@ const NavTogglerIcon = props =>{
 
 
     const toggleIconForm = useCallback(() =>{
-        console.log('toggle icon changw', hidden, tl)
         const rectsRef = [...svgRef.current.children];
         
         if(!hidden){
