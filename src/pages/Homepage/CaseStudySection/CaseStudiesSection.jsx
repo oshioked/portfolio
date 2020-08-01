@@ -1,19 +1,10 @@
-import React, {useRef, useEffect} from 'react';
+import React from 'react';
 import './CaseStudiesSection.scss';
-import gsap from 'gsap';
 import CaseStudyCard from '../../../components/CaseStudyCard/CaseStudyCard';
 
 const CaseStudiesSection = props =>{
-    const sectionRef = useRef(null);
-    
-
-    useEffect(()=>{
-        const slideRef = sectionRef.current.children[1].children[0];
-
-
-    })
     return(
-        <div ref = {sectionRef} className = "case-study-section">
+        <div className = "case-study-section">
             <div className = "head">
                 <h1>
                     <div>CASE STUDIES</div>

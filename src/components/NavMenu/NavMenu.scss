@@ -25,6 +25,8 @@
 
     .img-bg-holder{
         z-index: -2;
+        display: flex;
+        justify-content: center;
         
         img{
             height: 100%;
@@ -43,6 +45,7 @@
 
         ul{
             list-style: none;
+            padding: 0;
 
 
             li{

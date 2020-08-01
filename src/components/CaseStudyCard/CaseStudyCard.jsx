@@ -4,9 +4,6 @@ import gsap from 'gsap';
 import './CaseStudyCard.scss';
 
 
-
-console.log('render')
-
 const ContentContainerComponent = ({children}) =>{
     const [windowWidth, setWindowWith] = useState(window.innerWidth);
 
@@ -117,10 +114,6 @@ const CaseStudyCard = props =>{
             zIndex: 0
         })
     }, [])
-
-
-
-
 
     return(
         <div className = "case-study-card">
