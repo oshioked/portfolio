@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #25272C;
   color: rgb(255, 255, 255);
+  scroll-behavior: smooth;
 }
 
 button{

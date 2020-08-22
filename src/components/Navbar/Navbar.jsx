@@ -36,7 +36,7 @@ const Navbar = props =>{
                 <h4><div>MOBILE AND WEB DEV</div></h4>
             </div>
             <div ref = {togglerRef} className = "button-container">
-                <button onClick = {toggleHidden }>
+                <button onClick = {toggleHidden}>
                     <NavTogglerIcon/>
                 </button>                 
             </div>

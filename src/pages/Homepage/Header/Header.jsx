@@ -61,7 +61,7 @@ const Header = props =>{
                     </p>
                 </div>
                 <div ref = {buttonRef} className = "content-btn-container">
-                    <button>Hire Me</button>                    
+                    <a href="mailto:danieloshos3@gmail.com">Hire Me</a>                    
                 </div>
             </div>
             <div ref = {shapeContRef}  className = "shapes-container">
@@ -72,18 +72,15 @@ const Header = props =>{
                 <div className = "shape shape5"/>
             </div>
             <div ref = {socialLinksRef} className = "socials-links">
-                <button>
+                <a href = 'https://github.com/oshioked' rel="noopener noreferrer" target = "_blank">
                     <GithubIcon/>
-                </button>
-                <button>
+                </a>
+                <a href = 'https://twitter.com/DanielOshos' rel="noopener noreferrer" target = "_blank">
                     <TwitterIcon/>
-                </button>
-                <button>
-                    <IGIcon/>
-                </button>
-                <button>
+                </a>
+                <a id = 'mail-icon' href="mailto:danieloshos3@gmail.com">
                     <MailIcon/>
-                </button>
+                </a>
             </div>
         </header>
     )

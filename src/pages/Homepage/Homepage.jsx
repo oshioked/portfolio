@@ -10,7 +10,7 @@ const Homepage = props =>{
     return(
         <div className = "homepage">
             <Header/>
-            {/* <NavMenu/> */}
+            <NavMenu/>
             <CaseStudiesSection/>
             <AboutMeSection/>
             <ContactSection/>

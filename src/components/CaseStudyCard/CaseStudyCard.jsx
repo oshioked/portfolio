@@ -11,7 +11,7 @@ const ContentContainerComponent = ({children}) =>{
         window.addEventListener('resize', ()=>{
             setWindowWith(window.innerWidth)
         })
-        return(
+        return( () =>
             window.removeEventListener('resize', ()=>{
                 setWindowWith(window.innerWidth)
             })
@@ -27,12 +27,7 @@ const ContentContainerComponent = ({children}) =>{
 
 
 const CaseStudyCard = props =>{
-    const imgs = [
-        require('../../assests/images/casestudysample.png'),
-        require('../../assests/images/dimitar-donovski-cIG6MZFamyU-unsplash.jpg'),
-        require('../../assests/images/dimitar-donovski-cIG6MZFamyU-unsplash.jpg'),
-        require('../../assests/images/casestudysample.png')
-    ]
+    const {imgs, title, details } = props;
     const [activeImg, setActiveImage] = useState(0);
     const mainImagesRef = useRef(null);
     const otherPhotosRef = useRef(null);
@@ -115,6 +110,14 @@ const CaseStudyCard = props =>{
         })
     }, [])
 
+    const onLinkClick = (url) =>{
+        if(url){
+            window.open(url);
+            window.focus()            
+        }
+
+    }
+
     return(
         <div className = "case-study-card">
             <div className = "dark-bg-container"/>
@@ -149,21 +152,23 @@ const CaseStudyCard = props =>{
                 <div ref ={detailsRef} className = "details"> 
                     <h1 className = 'title'>
                         <div>
-                            ALOX BRAND WEBSITE
+                            {title}
                         </div>
                     </h1>
-                    <div className = 'para1'>
-                        <p>
-                        An ecommerce travel brand website for a merce travel brand website for a travel bags and accessories.
-                        </p>
-                    </div>
-                    <div className = 'para1'>
-                        <p>
-                        An ecommerce travel brand website for a merce travel brand website for a travel bags and accessories.
-                        </p>
-                    </div>
+                    {
+                        details.map((detail, i)=>(
+                            <div key = {i} className = "para1">
+                                <p>{detail}</p>
+                            </div>
+                        ))
+                    }
                     <div className = 'button-container'>
-                        <button>View Project</button>
+                        <button 
+                            onClick = {()=>onLinkClick(props.appLink)}
+                        >View Project</button>
+                        <button
+                            onClick = {()=>onLinkClick(props.repoLink)}
+                        >View Code</button>
                     </div>
                 </div>
             </ContentContainerComponent>

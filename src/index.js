@@ -4,10 +4,8 @@ import App from './App';
 import MenuProvider from './contextTheme/MenuContext';
 
 ReactDOM.render(
-  <React.StrictMode>
     <MenuProvider>
       <App/>      
-    </MenuProvider>
-  </React.StrictMode>,
+    </MenuProvider>,
   document.getElementById('root')
 );
