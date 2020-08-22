@@ -15,8 +15,8 @@ const NavMenu = props =>{
         
         const linksChildren = [...linksRef.current.children].map(a => a.children)
         tl
-            .from(navRef.current,{
-                yPercent: -100,
+            .to(navRef.current,{
+                y: 0,
                 duration: 1.3,
                 ease: 'power3.inOut'
             })
@@ -39,11 +39,9 @@ const NavMenu = props =>{
 
     useEffect(()=>{
         if(!hidden){
-            console.log('will play');
             document.body.style.overflow = 'hidden'
             tl.timeScale(1).play()
         }else{
-            console.log('will reverse');
             document.body.style.overflow = null
             tl.timeScale(2).reverse();
         } 
