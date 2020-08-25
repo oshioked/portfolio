@@ -13,12 +13,29 @@
         z-index: -2;
         top: 0;
         left: 0;
-        background: url('../../../assests//images/background-matrix-style_88211-270\ 1.png')
+    }
+
+    .img-bg-container{
+        overflow: hidden;
+
+        img{
+            opacity: 0.8;
+            animation: contUpwardMove 30s linear infinite;
+        }
+
+        @keyframes contUpwardMove {
+            from{
+                transform: translateY(-100%)
+            }
+            to{
+                transform: translateY(0%)
+            }
+        }
     }
 
     .gradient-bg-container{
-        z-index: -1;
-        background: linear-gradient(rgba(255, 255, 255, 0), #25272C)
+        z-index: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0), #25272C)
     }
 
     .content{
@@ -122,8 +139,11 @@
         z-index: 11;
         overflow: hidden;
 
+
+
         a{
             border: none;
+            display: inline-block;
             cursor: pointer;
             margin: 0 15px;
             background: none;

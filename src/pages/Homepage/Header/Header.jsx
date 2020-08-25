@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import './Header.scss';
 import gsap from 'gsap';
-import { GithubIcon, TwitterIcon, IGIcon, MailIcon } from '../../../components/svgs';
+import { GithubIcon, TwitterIcon, MailIcon } from '../../../components/svgs';
 
 const Header = props =>{
     const headerRef = useRef(null);
@@ -14,7 +14,7 @@ const Header = props =>{
 
     useEffect(()=>{
         const titles = [[...titleRef.current.children].map(a => a.children)];
-        const tl = gsap.timeline({delay: .7});
+        const tl = gsap.timeline({delay: (.4 + 5)});
         
         tl
             .from([...titles, ...paraRef.current.children, ...buttonRef.current.children], {
@@ -35,12 +35,20 @@ const Header = props =>{
                 duration: .3,
                 yPercent: 100,
                 stagger: .1
-            }, '-=1');
+            }, '-=1')
+            .fromTo(imgBgContRef.current.children, {
+                animation: 'none'
+            },{
+                animation: null
+            }, '-=2.5')
     }, [])
 
     return(
         <header ref = {headerRef} className = "homepage-header">
-            <div ref = {imgBgContRef} className = "img-bg-container"/>
+            <div ref = {imgBgContRef} className = "img-bg-container">
+                <img src = {require('../../../assests/images/0&1.png')} alt = 'hoesAndOnes'/>
+                <img src = {require('../../../assests/images/0&1.png')} alt = 'hoesAndOnes'/>
+            </div>
             <div className = "gradient-bg-container"/>
             <div className = "content">
                 <h1 ref = {titleRef} className = "content-titles">

@@ -7,8 +7,8 @@ const caseStudies = [
         title: 'Quickeats',
         details: [
         `
-            Quickeats is a full resturant app  built with React native, Node JS (to manage backend activities like authentication, user activities 
-            like ordering, searching, liking a meal, etc., calculating user bonuses and sending a push notification to the store owner's device on order.),
+            Quickeats is a full resturant mobile app  built with React native. It uses NodeJS (to handle backend activities like authentication, user activities 
+            like ordering, searching, liking a meal, etc. calculating user bonuses and sending a push notification to the store owner's device on order.),
             POSTGRESQL for database management and Firebase storage for media storage.
         `
         ],
@@ -24,14 +24,14 @@ const caseStudies = [
     {
         title: 'Alox',
         details: [`
-            An ecommerce travel brand website built with React and Firebase to manange authentication and database management. It is integrated with Stripe for payment handling.
-            It is fully responsive, accessible and dynamic with good performance.
+            A travel lifestyle and brand ecommerce web application (PWA) built with React and Firebase to manange authentication and database management. 
+            It is integrated with Stripe for payment handling. It is also fully responsive, accessible and dynamic with good performance.
         `],
         images: [
-            require('../../../assests/images/Alox/alox.jpg'),
-            require('../../../assests/images/Alox/alox3 (1).png'),
-            require('../../../assests/images/Alox/alox4 (1).png'),
-            require('../../../assests/images/Alox/alox2 (1).png'),
+            require('../../../assests/images/Alox/alox1.jpg'),
+            require('../../../assests/images/Alox/alox2.jpg'),
+            require('../../../assests/images/Alox/alox3.jpg'),
+            require('../../../assests/images/Alox/alox4.jpg'),
         ],
         repoLink: "https://github.com/oshioked/Alox-travel",
         appLink: "https://alox.herokuapp.com"
@@ -39,14 +39,44 @@ const caseStudies = [
     {
         title: 'Quickeats Landing Page',
         details: [`
-            An ecommerce travel brand website built with React and Firebase to manange authentication and database management. It is integrated with Stripe for payment handling.
+            The official landing page of quickeats app. A restuarant mobile app. It is mainly built with React and SCSS.
             It is fully responsive, accessible and dynamic with good performance.
         `],
         images: [
-            require('../../../assests/images/QLanding/QLP1.png'),
-            require('../../../assests/images/Alox/alox2 (1).png'),
-            require('../../../assests/images/Alox/alox3 (1).png'),
-            require('../../../assests/images/Alox/alox4 (1).png'),
+            require('../../../assests/images/Alox/alox1.jpg'),
+            require('../../../assests/images/Alox/alox2.jpg'),
+            require('../../../assests/images/Alox/alox3.jpg'),
+            require('../../../assests/images/Alox/alox4.jpg'),
+        ],
+        repoLink: 'https://github.com/oshioked/quickeats-app-landing-page',
+        appLink: 'https://quickeatss.herokuapp.com'
+    },
+    {
+        title: 'Lite Bank',
+        details: [`
+            A banking / fintech mobile app. Built with react native. This is one of many results from a personal challenge I had a long while ago.
+            Redesign on figma and build with react native. Charts in this app are built with react-native-charts. To see more results from the challenge, check my github.
+        `],
+        images: [
+            require('../../../assests/images/LiteBank/Litebank1.jpg'),
+            require('../../../assests/images/LiteBank/Litebank2.jpg'),
+            require('../../../assests/images/LiteBank/Litebank3.jpg'),
+            require('../../../assests/images/LiteBank/Litebank4.jpg'),
+        ],
+        repoLink: 'https://github.com/oshioked/quickeats-app-landing-page',
+        appLink: 'https://quickeatss.herokuapp.com'
+    },
+    {
+        title: 'Personal Portfolio',
+        details: [`
+            An ecommerce travel brand website built with React and Firebase to manange authentication and database management. It is integrated with Stripe for payment handling.
+            It is fully responsive, accessible and dynamic with good performance. 
+        `],
+        images: [
+            require('../../../assests/images/Portfolio/portfolio1.jpg'),
+            require('../../../assests/images/Portfolio/portfolio2.jpg'),
+            require('../../../assests/images/Portfolio/portfolio3.jpg'),
+            require('../../../assests/images/Portfolio/portfolio4.jpg'),
         ],
         repoLink: 'https://github.com/oshioked/quickeats-app-landing-page',
         appLink: 'https://quickeatss.herokuapp.com'

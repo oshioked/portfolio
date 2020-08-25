@@ -79,7 +79,7 @@
 
             .container{
                 position: relative;
-                padding-top: 58%;
+                padding-top: 60%;
                 overflow: hidden;
                 
                 .images-container{
@@ -127,23 +127,30 @@
                 margin: 15px 0;
                 font-weight: 500;
                 font-size: 22px;
+                overflow: hidden;
                 color: rgba(255, 255, 255, 0.808);
             }
-            p{
-                font-size: 15px;
-                line-height: 20px;;
-                color: rgba(255, 255, 255, 0.603);
-                margin: 10px 0;
+            .para1{
+                overflow: hidden;
+                p{
+                    font-size: 15px;
+                    line-height: 20px;;
+                    color: rgba(255, 255, 255, 0.603);
+                    margin: 10px 0;
+                }                
             }
+
 
             .button-container{
                 margin-top: 20px;
+                overflow: hidden;
 
                 button{
                     border: none;
                     border-radius: 5px;
                     padding: 10px 15px;
                     margin-right: 20px;
+                    background: white;
                 }
             }
         }
@@ -173,6 +180,10 @@
 
         .details{
             width: 100%;
+
+            p{
+                line-height: 20px;
+            }
         }
     }
 }

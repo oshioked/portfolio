@@ -14,7 +14,7 @@ const Navbar = props =>{
     useEffect(()=>{
         const brandTitles = [...brandRef.current.children].map(a => a.children);
 
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({delay: ( 5)});
         tl
             .from(brandTitles, {
                 yPercent: 100,
@@ -33,7 +33,7 @@ const Navbar = props =>{
         <nav className = "navbar">
             <div ref = {brandRef} className = "brand">
                 <h1><div>OSHIOKE DANIEL</div></h1>
-                <h4><div>MOBILE AND WEB DEV</div></h4>
+                <h4><div>FULLSTACK DEVELOPER</div></h4>
             </div>
             <div ref = {togglerRef} className = "button-container">
                 <button onClick = {toggleHidden}>

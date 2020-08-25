@@ -77,33 +77,41 @@ const CaseStudyCard = props =>{
         const otherPhotosContHeight = otherPhotosRef.current.clientHeight;
         tl
         .from(mainImagesRef.current, {
-            duration: 2.5,
+            duration: 2,
             scale: 1.22
         })
+        // for mobile
+        .from(otherPhotosChildren, {
+            duration: window.innerWidth > 768 ? null : .4,
+            autoAlpha: window.innerWidth > 768 ? null : 0,
+            yPercent: window.innerWidth > 768 ? null : -110,
+            stagger: window.innerWidth > 768 ? null : .3,
+        }, '-=.5')
         .from([...detailsChildren].map(a => a.children), {
             autoAlpha: 0,
             yPercent: 100,
-            duration: .3,
+            duration: .4,
             stagger: .2
-        }, '-=2')
+        }, window.innerWidth > 768 ? '-=1.5' : '-=.3')
+        // for pc
         .from(otherPhotosChildren[0], {
-            autoAlpha: 0,
-            duration: .3,
-        }, '-=1.5')
+            duration: window.innerWidth < 768 ? null : .4,
+            autoAlpha: window.innerWidth < 768 ? null : 0,
+        }, "-=1")
         .from(otherPhotosChildren[1], {
-            duration: .5,
-            autoAlpha: 0,
-            x: -(otherPhotosContWidth/1.5)
-        })
+            duration:  window.innerWidth < 768 ? null : .4,
+            autoAlpha:  window.innerWidth < 768 ? null : 0,
+            x:  window.innerWidth < 768 ? null : -(otherPhotosContWidth/1.5)
+        }, "-=.5")
         .from(otherPhotosChildren[3], {
-            duration: .5,
-            autoAlpha: 0,
-            y: -(otherPhotosContHeight * 2)
+            duration:  window.innerWidth < 768 ? null : .4,
+            autoAlpha:  window.innerWidth < 768 ? null : 0,
+            y:  window.innerWidth < 768 ? null : -(otherPhotosContHeight * 2)
         })
         .from(otherPhotosChildren[2], {
-            duration: .5,
-            autoAlpha: 0,
-            x: (otherPhotosContWidth/1.5)
+            duration:  window.innerWidth < 768 ? null : .4,
+            autoAlpha:  window.innerWidth < 768 ? null : 0,
+            x:  window.innerWidth < 768 ? null : (otherPhotosContWidth/1.5)
         })
         .set(otherPhotosChildren, {
             zIndex: 0
