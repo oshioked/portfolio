@@ -86,7 +86,8 @@ const AboutMeSection = props =>{
                     I specialize in turning functional user interfaces designs in to real life applications. But before all these things, I am a fast and open minded learner. 
                 </h1>
                 <p ref = {pRef}>
-                    Over the past 2 years I have been working with big companies and rising startups around the world as a developer and sometimes, a UI/UX designer, working solo and leading small design teams. In my spare time I enjoy watching football and the online bants it comes with.
+                    Over the past 2 years I have been working on many simple to complex projects as a developer. In my spare time I enjoy watching football and playing video games.
+                    
                 </p>
             </div>
             <div ref = {techRef} className = 'technologies'>

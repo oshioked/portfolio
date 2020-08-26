@@ -65,7 +65,7 @@ const Header = props =>{
                 </h1>
                 <div ref = {paraRef} className = "content-para-container">
                     <p className = "content-para">
-                    I am a passionate and creative fullstack mobile and web applications developer who build stuffs for money
+                    I am a passionate and creative fullstack developer who build products that solve problems.
                     </p>
                 </div>
                 <div ref = {buttonRef} className = "content-btn-container">
