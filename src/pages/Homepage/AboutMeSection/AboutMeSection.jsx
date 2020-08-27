@@ -40,7 +40,7 @@ const techs = [
         image: ''
     },
     {
-        title: 'SASS',
+        title: 'CSS IN JS',
         image: ''
     },
     {
@@ -49,8 +49,7 @@ const techs = [
     },{
         title: 'Testing',
         image: ''
-    },
-
+    }
 ]
 
 const AboutMeSection = props =>{
@@ -82,22 +81,28 @@ const AboutMeSection = props =>{
             </div>
             <div className = "details">
                 <h1 ref = {h1Ref}>
-                    I’m Daniel Oshioke Iyogwoya, a creative and passionate fullstack developer and UI enthusiast who focuses on building products that solves real problems through enjoyable and meaningful experiences. 
+                    I’m Daniel Oshioke Iyogwoya, a creative and passionate software developer and UI enthusiast who focuses on building products that solves real problems through enjoyable and meaningful experiences. 
                     I specialize in turning functional user interfaces designs in to real life applications. But before all these things, I am a fast and open minded learner. 
                 </h1>
                 <p ref = {pRef}>
-                    Over the past 2 years I have been working on many simple to complex projects as a developer. In my spare time I enjoy watching football and playing video games.
+                    Over the past 2 years I have been working on many simple to complex projects as a developer with various technologies and tools including;
                     
                 </p>
             </div>
             <div ref = {techRef} className = 'technologies'>
                 {
                     techs.map((tech, i)=>(
-                        <div className = 'tech-set'>
+                        <div key = {i} className = 'tech-set'>
                             <h2>{tech.title}</h2>
                         </div>
                     ))
                 }
+            </div>
+            <div className = "details">
+                <p ref = {pRef}>
+                    Others includes  Responsive web design, Performance Optimization and Progressive web applications. 
+                    I'm currently learning Next.js and I'm open to learning more interesting things as per requirements. 
+                </p>
             </div>
         </div>
     )

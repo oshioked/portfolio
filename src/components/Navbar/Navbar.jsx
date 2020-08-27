@@ -33,7 +33,7 @@ const Navbar = props =>{
         <nav className = "navbar">
             <div ref = {brandRef} className = "brand">
                 <h1><div>OSHIOKE DANIEL</div></h1>
-                <h4><div>FULLSTACK DEVELOPER</div></h4>
+                <h4><div>SOFTWARE DEVELOPER</div></h4>
             </div>
             <div ref = {togglerRef} className = "button-container">
                 <button onClick = {toggleHidden}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactSection.scss';
-import {HeartIcon, MailIcon} from '../../../components/svgs'
+import {MailIcon} from '../../../components/svgs'
 
 const ContactSection = props =>{
     return(
