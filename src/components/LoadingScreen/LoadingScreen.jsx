@@ -13,9 +13,15 @@ const LoadingScreen = () =>{
         const paths = [...svgRef.current.children];
 
         const tl = gsap.timeline();
-        tl.to(paths, {
-            y: 0,
+        tl
+        .to([roleRef.current, svgRef.current], {
+            autoAlpha: 1,
+            duration: .5
+        })
+        .from(paths, {
+            yPercent: 130,
             duration: .3,
+            autoAlpha: 0,
             stagger: .1
         })
         .to(paths, {
@@ -23,8 +29,8 @@ const LoadingScreen = () =>{
             duration: .2,
             stagger: .1
         }, '-=1')
-        .to(roleRef.current.children, {
-            y: 0,
+        .from(roleRef.current.children, {
+            yPercent: 100,
             duration: .5,
             onStart: ()=>window.scrollTo(0, 0),
         }, '+=.3')

@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: #1E1F22;
+    background: #17171a;
 
     .name-container{
         width: 45%;
@@ -20,11 +20,7 @@
                 height: 100%;
                 width: 100%;
                 overflow: hidden;
-
-                path{
-                transform: translateY(130%)
-
-                }
+                opacity: 0;
             }
         }
     }
@@ -32,12 +28,12 @@
     .role-container{
         overflow: hidden;
         margin-top: 20px;
+        opacity: 0;
         
         h1{
             margin: 0;
             font-weight: 300;
             font-size: 26px;
-            transform: translateY(100%)
         };
     }
 }

@@ -14,7 +14,7 @@ const Header = props =>{
 
     useEffect(()=>{
         const titles = [[...titleRef.current.children].map(a => a.children)];
-        const tl = gsap.timeline({delay: (.4 + 5)});
+        const tl = gsap.timeline({delay: (.4 + 5.5)});
         
         tl
             .from([...titles, ...paraRef.current.children, ...buttonRef.current.children], {

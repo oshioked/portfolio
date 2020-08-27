@@ -14,7 +14,7 @@ const Navbar = props =>{
     useEffect(()=>{
         const brandTitles = [...brandRef.current.children].map(a => a.children);
 
-        const tl = gsap.timeline({delay: ( 5)});
+        const tl = gsap.timeline({delay: ( 5.5)});
         tl
             .from(brandTitles, {
                 yPercent: 100,

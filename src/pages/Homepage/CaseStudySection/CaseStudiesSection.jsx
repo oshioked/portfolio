@@ -64,7 +64,7 @@ const caseStudies = [
             require('../../../assests/images/LiteBank/Litebank4.jpg'),
         ],
         repoLink: 'https://github.com/oshioked/quickeats-app-landing-page',
-        appLink: 'https://quickeatss.herokuapp.com'
+        appLink: ''
     },
     {
         title: 'Personal Portfolio',
@@ -78,8 +78,8 @@ const caseStudies = [
             require('../../../assests/images/Portfolio/portfolio3.jpg'),
             require('../../../assests/images/Portfolio/portfolio4.jpg'),
         ],
-        repoLink: 'https://github.com/oshioked/quickeats-app-landing-page',
-        appLink: 'https://quickeatss.herokuapp.com'
+        repoLink: '',
+        appLink: ''
     },
 ]
 
