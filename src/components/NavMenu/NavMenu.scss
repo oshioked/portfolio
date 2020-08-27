@@ -76,6 +76,12 @@
 
 @media only screen and (max-width: 768px){
     .nav-menu{
+
+        .img-bg-holder{
+            img{
+                min-width: auto;
+            }
+        }
         .content{
             justify-content: flex-start;
             ul{

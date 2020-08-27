@@ -55,7 +55,7 @@ const NavMenu = props =>{
     return(
         <div ref = {navRef} className = "nav-menu">
             <div ref = {imgBgRef} className = "img-bg-holder">
-                <img src = {require('../../assests/images/profile.jpg')} alt = "nav-menu-bg"/>
+                <img src = {require('../../assests/images/profile.jpeg')} alt = "nav-menu-bg"/>
             </div>
             <div ref = {imgDarkenerRef} className = "image-darkener"/>
             <div className = "content">
