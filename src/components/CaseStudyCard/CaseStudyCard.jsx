@@ -170,14 +170,27 @@ const CaseStudyCard = props =>{
                             </div>
                         ))
                     }
-                    <div className = 'button-container'>
-                        <button 
-                            onClick = {()=>onLinkClick(props.appLink)}
-                        >View Project</button>
-                        <button
-                            onClick = {()=>onLinkClick(props.repoLink)}
-                        >View Code</button>
-                    </div>
+                    {
+                        props.repoLink || props.appLink?
+                        <div className = 'button-container'>
+                            {
+                                props.appLink ?
+                                <button 
+                                    onClick = {()=>onLinkClick(props.appLink)}
+                                >View Project</button>
+                                : null
+                            }
+                        {
+                            props.repoLink ?
+                                <button
+                                    onClick = {()=>onLinkClick(props.repoLink)}
+                                >View Code</button>    
+                                : null                       
+                        }
+                        </div>
+                        : null
+                    }
+
                 </div>
             </ContentContainerComponent>
         </div>

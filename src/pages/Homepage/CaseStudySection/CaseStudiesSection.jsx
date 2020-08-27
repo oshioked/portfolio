@@ -43,10 +43,10 @@ const caseStudies = [
             It is fully responsive, accessible and dynamic with good performance.
         `],
         images: [
-            require('../../../assests/images/Alox/alox1.jpg'),
-            require('../../../assests/images/Alox/alox2.jpg'),
-            require('../../../assests/images/Alox/alox3.jpg'),
-            require('../../../assests/images/Alox/alox4.jpg'),
+            require('../../../assests/images/QLanding/Qlanding.jpg'),
+            require('../../../assests/images/QLanding/Qlanding2.jpg'),
+            require('../../../assests/images/QLanding/Qlanding3.jpg'),
+            require('../../../assests/images/QLanding/Qlanding4.jpg'),
         ],
         repoLink: 'https://github.com/oshioked/quickeats-app-landing-page',
         appLink: 'https://quickeatss.herokuapp.com'
