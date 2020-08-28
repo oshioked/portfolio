@@ -177,7 +177,7 @@ const CaseStudyCard = props =>{
                                 props.appLink ?
                                 <button 
                                     onClick = {()=>onLinkClick(props.appLink)}
-                                >View Project</button>
+                                >View Live</button>
                                 : null
                             }
                         {

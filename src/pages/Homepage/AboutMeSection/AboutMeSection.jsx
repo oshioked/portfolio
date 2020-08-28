@@ -24,6 +24,22 @@ const techs = [
         image: ''
     },
     {
+        title: 'HTML5',
+        image: ''
+    },
+    {
+        title: 'CSS3',
+        image: ''
+    },
+    {
+        title: 'Firebase',
+        image: ''
+    },
+    {
+        title: 'GIT / GITHUB',
+        image: ''
+    },
+    {
         title: 'SASS',
         image: ''
     },
@@ -81,11 +97,11 @@ const AboutMeSection = props =>{
             </div>
             <div className = "details">
                 <h1 ref = {h1Ref}>
-                    I’m Daniel Oshioke Iyogwoya, a creative and passionate software developer and UI enthusiast who focuses on building products that solves real problems through enjoyable and meaningful experiences. 
+                    I am Daniel Oshioke Iyogwoya, a creative and passionate software developer and UI enthusiast who focuses on building products that solves real problems through enjoyable and meaningful experiences. 
                     I specialize in turning functional user interfaces designs in to real life applications. But before all these things, I am a fast and open minded learner. 
                 </h1>
                 <p ref = {pRef}>
-                    Over the past 2 years I have been working on many simple to complex projects as a developer with various technologies and tools including;
+                    Over the past 2 years I have been working on many simple to complex projects with various technologies and tools including:
                     
                 </p>
             </div>
@@ -100,8 +116,8 @@ const AboutMeSection = props =>{
             </div>
             <div className = "details">
                 <p ref = {pRef}>
-                    Others includes  Responsive web design, Performance Optimization and Progressive web applications. 
-                    I'm currently learning Next.js and I'm open to learning more interesting things as per requirements. 
+                    Others include Responsive web design, Performance Optimization and Progressive web applications. 
+                    I am currently learning Next.js and Typescript and I'm open to learning more interesting things as per requirements. 
                 </p>
             </div>
         </div>
