@@ -1,1 +1,1 @@
-Personal portfolio site create from scratch with react.
+Personal portfolio site created from scratch with react.
