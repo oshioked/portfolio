@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import './Header.scss';
 import gsap from 'gsap';
-import { GithubIcon, TwitterIcon, MailIcon } from '../../../components/svgs';
+import { GithubIcon, TwitterIcon, MailIcon, LinkedinIcon } from '../../../components/svgs';
 
 const Header = props =>{
     const headerRef = useRef(null);
@@ -85,6 +85,9 @@ const Header = props =>{
                 </a>
                 <a href = 'https://twitter.com/DanielOshos' rel="noopener noreferrer" target = "_blank">
                     <TwitterIcon/>
+                </a>
+                <a href = 'https://www.linkedin.com/in/danieloshos' rel="noopener noreferrer" target = "_blank">
+                    <LinkedinIcon/>
                 </a>
                 <a id = 'mail-icon' href="mailto:danieloshos3@gmail.com">
                     <MailIcon/>

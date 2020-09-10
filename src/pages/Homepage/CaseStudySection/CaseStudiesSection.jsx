@@ -72,8 +72,8 @@ const caseStudies = [
             Personal portfolio built with React and SCSS. Hosted on heroku. It is fully responsive, accessible and with great performance.
         `],
         images: [
-            require('../../../assests/images/Portfolio/portfolio1.jpg'),
             require('../../../assests/images/Portfolio/portfolio2.jpg'),
+            require('../../../assests/images/Portfolio/portfolio1.jpg'),
             require('../../../assests/images/Portfolio/portfolio3.jpg'),
             require('../../../assests/images/Portfolio/portfolio4.jpg'),
         ],

@@ -21,6 +21,10 @@ export const IGIcon = props =>(
 </svg>
 )
 
+export const LinkedinIcon = props =>(
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+)
+
 export const MailIcon = props =>(
     <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0V18H24V0H0ZM21.518 2L12 9.713L2.482 2H21.518ZM2 16V4.183L12 12.287L22 4.183V16H2Z" fill="white" fillOpacity="0.5"/>
@@ -37,3 +41,4 @@ export const HeartIcon = props =>(
 	c2.3-1.6,5.9-2.9,5.9-6.5C20,1.2,12.5,0.1,10,5.6z"></path> </svg>
 
 )
+

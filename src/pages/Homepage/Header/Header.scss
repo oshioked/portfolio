@@ -139,6 +139,22 @@
         z-index: 11;
         overflow: hidden;
 
+        svg{
+            path{
+                fill: white;
+                fill-opacity: 0.5;
+                transition: all .7s;
+
+               
+            } 
+
+            &:hover{
+                path{
+                    fill-opacity: 1;
+                }
+            }
+        }
+
 
 
         a{
@@ -181,6 +197,10 @@
         .socials-links{
             margin-left: 5%;
             bottom: 3%;
+
+            a{
+                margin: 0 10px;
+            }
         }
     }
 }
