@@ -77,7 +77,7 @@ const caseStudies = [
             require('../../../assests/images/Portfolio/portfolio3.jpg'),
             require('../../../assests/images/Portfolio/portfolio4.jpg'),
         ],
-        repoLink: '',
+        repoLink: 'https://github.com/oshioked/portfolio',
         appLink: ''
     },
 ]
