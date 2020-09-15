@@ -54,8 +54,8 @@ const caseStudies = [
     {
         title: 'Lite Bank',
         details: [`
-            A banking / fintech mobile app. Built with react native. This is one of many results from a personal challenge I had a while ago.
-            Redesign on figma and build with react native. To see more results from the challenge, check my github.
+            A banking / fintech mobile app where users can save money, send and recieve money, pay bills and others. Built with react native. It is easy to use as the processes are structured to be as simple as possible. 
+            
         `],
         images: [
             require('../../../assests/images/LiteBank/Litebank1.jpg'),
