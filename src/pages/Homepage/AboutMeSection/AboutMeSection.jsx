@@ -16,6 +16,10 @@ const techs = [
         image: ''
     },
     {
+        title: 'Next Js',
+        image: ''
+    },
+    {
         title: 'Node Js',
         image: ''
     },
@@ -117,7 +121,7 @@ const AboutMeSection = props =>{
             <div className = "details">
                 <p ref = {pRef}>
                     Others include Responsive web design, Performance Optimization and Progressive web applications. 
-                    I am currently learning Next.js and Typescript and I'm open to learning more interesting things as per requirements. 
+                    I am currently learning to write better Tests and Typescript and I'm open to learning more interesting things as per requirements. 
                 </p>
             </div>
         </div>
