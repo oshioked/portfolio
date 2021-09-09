@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import gsap from 'gsap';
-
 import './CaseStudyCard.scss';
 
 
@@ -30,7 +29,7 @@ const CaseStudyCard = props =>{
     const {imgs, title, details } = props;
     const [activeImg, setActiveImage] = useState(0);
     const mainImagesRef = useRef(null);
-    const otherPhotosRef = useRef(null);
+    const otherPhotosContainerRef = useRef(null);
     const detailsRef = useRef(null);
 
 
@@ -43,22 +42,22 @@ const CaseStudyCard = props =>{
         await Tl.to(allImages[activeImg], {
             transform: 'translateY(-100%)',
         }, 'same')
-        .to(allImages[activeImg].children,{
+        .to(allImages[activeImg].children, {
             transform: 'translateY(100%)',
         }, '0')
         .set(allButNewActive, {
             transform: 'translateY(100%)',
         })
-        .set(allImages[activeImg].children,{
+        .set(allImages[activeImg].children, {
             transform: 'translateY(-100%) scale(1.2)',
         })
         .to(allImages[i], {
             transform: 'translateY(0%)',
         }, '0')
-        .to(allImages[i].children,{
+        .to(allImages[i].children, {
             transform: 'translateY(0%)',
         }, '.0')
-        .to(allImages[i].children,{
+        .to(allImages[i].children, { 
             scale: 1,
             duration: .5,
         }, '-=.2')
@@ -67,14 +66,14 @@ const CaseStudyCard = props =>{
     }, [activeImg])
 
     useEffect(()=>{
-        const otherPhotosChildren = otherPhotosRef.current.children;
+        const otherPhotosChildren = otherPhotosContainerRef.current.children;
         const detailsChildren = detailsRef.current.children;
         const tl = gsap.timeline({scrollTrigger: {
-            trigger: otherPhotosRef.current,
+            trigger: otherPhotosContainerRef.current,
             start: 'top bottom'
         }});
-        const otherPhotosContWidth = otherPhotosRef.current.clientWidth;
-        const otherPhotosContHeight = otherPhotosRef.current.clientHeight;
+        const otherPhotosContWidth = otherPhotosContainerRef.current.clientWidth;
+        const otherPhotosContHeight = otherPhotosContainerRef.current.clientHeight;
         tl
         .from(mainImagesRef.current, {
             duration: 2,
@@ -129,7 +128,7 @@ const CaseStudyCard = props =>{
     return(
         <div className = "case-study-card">
             <div className = "dark-bg-container"/>
-            <div ref = {otherPhotosRef} className = "other-photos" style = {props.order? {order: 1} : null}>
+            <div ref = {otherPhotosContainerRef} className = "other-photos" style = {props.order? {order: 1} : null}>
                 {
                     imgs.map((img, i) =>{
                         return(

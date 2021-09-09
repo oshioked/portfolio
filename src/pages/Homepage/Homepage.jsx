@@ -6,10 +6,13 @@ import ContactSection from './ContactSection/ContactSection';
 import AboutMeSection from './AboutMeSection/AboutMeSection';
 import NavMenu from '../../components/NavMenu/NavMenu';
 import Navbar from '../../components/Navbar/Navbar';
+import LoadingScreen from '../../components/LoadingScreen/LoadingScreen';
 
 const Homepage = props =>{
     return(
         <div className = "homepage">
+
+        <LoadingScreen/>
             <Header/>
             <Navbar/>
             <NavMenu/>

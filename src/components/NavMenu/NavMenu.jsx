@@ -12,7 +12,6 @@ const NavMenu = props =>{
     const tl = useState(()=>gsap.timeline({paused: true}))[0]
 
     useEffect(()=>{
-        
         const linksChildren = [...linksRef.current.children].map(a => a.children)
         tl
             .to(navRef.current,{
